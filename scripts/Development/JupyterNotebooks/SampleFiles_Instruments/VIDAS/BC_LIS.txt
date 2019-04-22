@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiMessage>
+ <header>
+  <senderName>bioMerieux</senderName>
+  <version>1394-97</version>
+  <dateTime>20190412162441</dateTime>
+  <instrumentName>MINVIDAS1</instrumentName>
+  <serialNumber></serialNumber>
+ </header>
+ <requestResult>
+  <patientInformation>
+   <patientIdentifier>387</patientIdentifier>
+   <lastName></lastName>
+   <sex>U</sex>
+   <location></location>
+  </patientInformation>
+  <testOrder>
+   <specimen>
+    <specimenIdentifier>MckA115720</specimenIdentifier>
+   </specimen>
+   <test>
+    <actionCode>N</actionCode>
+    <universalIdentifier>
+     <testIdentifier>LIS</testIdentifier>
+     <dilution>1</dilution>
+     <testName>Listeria</testName>
+    </universalIdentifier>
+    <result>
+     <value>0.01|NEGATIVE</value>
+     <abnormalFlags>valid</abnormalFlags>
+     <resultStatus>F</resultStatus>
+     <operatorName>minn-vidas1</operatorName>
+     <resultDateTime>20190412162434</resultDateTime>
+    </result>
+   </test>
+  </testOrder>
+ </requestResult>
+</aiMessage>
+
