@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Instrument Management - Mérieux NutriSciences</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
+    <script src="../static/js/jquery-1.11.2.js"></script>
+    <link rel="stylesheet" href="../static/css/properties.css" >
+</head>
+<body>
+<ul>
+    <li role="presentation"><l class="button" href="/">Logout</l></li>
+    <li role="presentation"><a class="button" href="/userHome">Home</a></li>
+</ul>
+<div class="header" align="center">
+    <div>
+            <div style="text-align: left">
+                <img src="../static/images/mxnslogo.jpg" style="text-align: left">
+            </div>
+        </div>
+    <p>Instrument Details</p>
+        </div>
+<!---------------- Form  ------------------->
+<div class="container">
+<form action="">
+    <!---------------- Instrument Name ------------------->
+    <div class="form-group row">
+    <label for="IName" class="col-sm-2 col-form-label">Instrument Name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="IName">
+    </div>
+     </div>
+    <!---------------- Instrument Type ------------------->
+    <div class="form-group row">
+    <label for="Itype" class="col-sm-2 col-form-label">Instrument Type</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="Itype">
+    </div>
+     </div>
+    <!---------------- Zeta Tag Number ------------------->
+    <div class="form-group row">
+    <label for="ztagnumber" class="col-sm-2 col-form-label">Zeta Tag Number</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="ztagnumber">
+    </div>
+     </div>
+    <!---------------- LIMS Name ------------------->
+    <div class="form-group row">
+    <label for="lName" class="col-sm-2 col-form-label">LIMS Name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="lName">
+    </div>
+     </div>
+    <!---------------- Purchase Date ------------------->
+    <div class="form-group row">
+    <label for="pdate" class="col-sm-2 col-form-label">Purchase Date</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="pdate">
+    </div>
+     </div>
+    <!---------------- Add Instrument Button------------------->
+  <div class="form-group row">
+      <div style="text-align: right;">
+   <button type="button" class="btn btn-success">Add Instrument</button>
+</div>
+  </div>
+</form>
+</div>
+<!---------------- Form end ------------------->
+<div class="footer">
+    <p>&copy; Designed and Maintained by LIMS Team , Lab Ops COE Mérieux NutriSciences</p>
+</div>
+</body>
+</html>
