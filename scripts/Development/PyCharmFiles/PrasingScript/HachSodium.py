@@ -20,7 +20,7 @@ dbName='hwi1'
 dburl='oracle://'
 
 # Default Parameters setting
-with open('.\ConfigFiles\HachConfig.json', 'r') as f:
+with open('./ConfigFiles/HachConfig.json', 'r') as f:
     config = json.load(f)
 print(config)
 lab = config['lab']

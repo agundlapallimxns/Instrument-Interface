@@ -1,5 +1,6 @@
 {
     "inst":"FOSS",
     "analysis":["PORT-BORIC"],
-    "lab":["Crete","Gainsville"]
+    "lab":["Gainsville"],
+    "mode":"test"
 }
