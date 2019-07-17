@@ -1,5 +1,6 @@
 {
     "inst":"Dumatherm",
     "analysis":["PROT-COMII","PROT-HICOM"],
-    "lab":[ "Gainsville"]
+    "lab":["Gainsville"],
+    "mode":"T"
 }

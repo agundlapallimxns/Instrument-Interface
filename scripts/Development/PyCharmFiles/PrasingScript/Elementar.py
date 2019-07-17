@@ -34,7 +34,7 @@ def getDataFromDB(sampleNumbersList):
     resultdf=pd.DataFrame()
     sampleNumbrStr=(', '.join("'" + str(item) + "'" for item in sampleNumbersList))
     queryText="SELECT sample_number, analysis, REPLICATE_COUNT,TEST_NUMBER FROM test"
-    queryText=queryText+" WHERE SAMPLE_NUMBER IN ("+sampleNumbrStr+") AND analysis IN ('FBR-SR-3C', 'CODEX-IST', 'CODEX-T')"
+    queryText=queryText+" WHERE SAMPLE_NUMBER IN ("+sampleNumbrStr+") AND analysis IN ('FBR-SR-3A', 'FBR-SR-3C', 'FBR-SR-3E','CODEX-IST', 'CODEX-T')"
     conn = engine.connect()
     resultdf = pd.read_sql(queryText, engine)
     conn.close()
@@ -63,17 +63,23 @@ def extractsuffix(sampleNumstring):
         return test1
     return None
 
-#Map the analysis
-def analysisdef(test):
-    analysis = {'IDF': 'CODEX-IST', 'SDF':'CODEX-IST','CODEX':'CODEX-T','FBR':'FBR-SR-3C'}
-    return analysis.get(test)
+#get the Db analysis Suffix
+def dbAnalysisSuffix(analysis):
+    return (analysis[:analysis.index("-")])
 
 #Map the result type
 def resultType(resultype):
     resultName = {'IDF': 'IDF % Protein', 'SDF':'SDF % Protein','CODEX':'TDF % Protein','FBR':'% Protein (xtest)'}
     return resultName.get(resultype)
 
-#Get the replicate if present
+#update the Suffx for merging
+def updateSuffix(sufx):
+    if sufx in ('IDF','SDF'):
+        return 'CODEX'
+    else:
+        return sufx
+
+#Get the replicate if present from the data file
 def getreplicate(sampleNumstring):
     if len(sampleNumstring)==11:
         if '/' in sampleNumstring:
@@ -94,11 +100,25 @@ print(config)
 lab = config['lab']
 analysis = config['analysis']
 inst = config['inst']
+mode = config['mode']
+print(mode)
 colsOrder=['Sample.Sample_Number', 'Test.Test_Number','Result.Name', 'Result.Entry', 'Result.Entered_By']
 for eachlab in lab:
     path='//mxns.loc//shares//NA-Instruments//Prod//'+eachlab+'//Import//'+inst+'//'
     archivedDestination='//mxns.loc//shares//NA-Instruments//Prod//'+eachlab+'//Import//'+inst+'//'
-    importDest='//mxns.loc//shares//NA-Instruments//Prod//'+eachlab+'//impf//'
+    #importDest='//mxns.loc//shares//NA-Instruments//Prod//'+eachlab+'//impf//'
+    if (mode == 'T'):
+        importDest = '//mxns.loc//shares//NA-Instruments//Prod//' + eachlab + '//testing//'
+    else:
+        importDest = '//mxns.loc//shares//NA-Instruments//Prod//' + eachlab + '//impf//'
+    if os.path.exists(path):
+        pass
+    else:
+        os.makedirs(path)
+    if os.path.exists(importDest):
+        pass
+    else:
+        os.makedirs(importDest)
     files = os.listdir(path)
     for filename in files:
         if fnmatch.fnmatch(filename,'*.CSV'):
@@ -112,8 +132,6 @@ for eachlab in lab:
             df_filtered.fillna(value=pd.np.nan, inplace=True)
             df_filtered = df_filtered.dropna()
             df_filtered = df_filtered[df_filtered['sample'] != 'orch lvs']
-            # define the Analysis
-            df_filtered['analysis'] = df_filtered['suffix'].apply(analysisdef)
             df_filtered['resultname'] = df_filtered['suffix'].apply(resultType)
             df_filtered['replicate_count'] = df_filtered['sample'].apply(getreplicate)
             dfResult = df_filtered[df_filtered['sample'].map(len) <= 11]
@@ -124,13 +142,19 @@ for eachlab in lab:
             dfResult = dfResult.astype({"replicate_count": int})
             sampleNumbersList = list(dfResult['sample_number'].unique())
             databasedf = getDataFromDB(sampleNumbersList)
-            merged_df = dfResult.merge(databasedf, how='inner', on=['sample_number', 'analysis', 'replicate_count'])
+            databasedf = databasedf.sort_values(by=['sample_number'])
+            databasedf['suffix'] = databasedf['analysis'].apply(dbAnalysisSuffix)
+            dfResult['suffix'] = dfResult['suffix'].apply(updateSuffix)
+
+            merged_df = dfResult.merge(databasedf, how = 'inner', on = ['sample_number', 'suffix','replicate_count'])
             merged_df['Result.Entered_By'] = 'IMPORTER'
             dfResult = merged_df.rename(index=str,
                                         columns={'sample_number': 'Sample.Sample_Number', 'resultname': 'Result.Name',
                                                  'Result': 'Result.Entry', 'test_number': 'Test.Test_Number'})
+            dfResult = dfResult.round(3)
             dfResult = dfResult[colsOrder]
             writeFile(dfResult, eachlab, inst, archivedDestination, importDest, datapath, filename)
         else:
             continue
-    print("Process Done")
+time.sleep(1)
+print("Process Done")

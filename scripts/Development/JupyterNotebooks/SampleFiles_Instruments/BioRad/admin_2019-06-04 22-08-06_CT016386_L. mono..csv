@@ -1,0 +1,40 @@
+File Name,admin_2019-06-04 22-08-06_CT016386.pcrd,,,,,,,,,,,,,,,,,,
+Created By User,admin,,,,,,,,,,,,,,,,,,
+Notes,,,,,,,,,,,,,,,,,,,
+ID,,,,,,,,,,,,,,,,,,,
+Run Started,06/05/2019 05:08:13 UTC,,,,,,,,,,,,,,,,,,
+Run Ended,06/05/2019 07:01:41 UTC,,,,,,,,,,,,,,,,,,
+Sample Vol,50,,,,,,,,,,,,,,,,,,
+Lid Temp,105,,,,,,,,,,,,,,,,,,
+Protocol File Name,IDE_Protocol.prcl,,,,,,,,,,,,,,,,,,
+Plate Setup File Name,IDE_PlateSetup.pltd,,,,,,,,,,,,,,,,,,
+Base Serial Number,CT016386,,,,,,,,,,,,,,,,,,
+Optical Head Serial Number,790BR01065,,,,,,,,,,,,,,,,,,
+CFX Manager Version,3.1.1554.0821. ,,,,,,,,,,,,,,,,,,
+Test Name,L. mono.,,,,,,,,,,,,,,,,,,
+Assay Name,L. mono.,,,,,,,,,,,,,,,,,,
+Assay Type,Qualitative,,,,,,,,,,,,,,,,,,
+Lot Number,64256230,,,,,,,,,,,,,,,,,,
+Extraction Lot Number,N/A,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+Amplification step,,,,,,,,,,,,,,,,,,,
+Melt step,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+Well,Fluor,Target,Content,Replicate,Sample,Biological Set Name,Well Note,Cq,Starting Quantity (SQ),Cq Mean,Cq Std. Dev,SQ Std. Dev,Melt Temperature,Peak Height,Begin Temperature,End Temperature,Call,End RFU,Result
+A01,FAM,,Unkn,,388795257-1,,,NaN,NaN,0,0,0,,,,,,-110.367518805258,Negative
+A03,FAM,,Neg Ctrl,,,,,NaN,NaN,0,0,0,,,,,,29.5034386379964,Valid Ctrl
+B01,FAM,,Unkn,,388795257-2,,,NaN,NaN,0,0,0,,,,,,-306.72376930677,Negative
+B03,FAM,,Pos Ctrl,,,,,30.0641704440345,NaN,30.0641704440345,0,0,,,,,(+) Positive,11459.9820753982,Valid Ctrl
+C01,FAM,,Unkn,,388795269-1,,,NaN,NaN,0,0,0,,,,,,48.804729345518,Inhibition
+D01,FAM,,Unkn,,388795269-2,,,NaN,NaN,0,0,0,,,,,,15.7443524149963,Inhibition
+E01,FAM,,Unkn,,388769819,,,NaN,NaN,0,0,0,,,,,,-266.209454005494,Negative
+F01,FAM,,Unkn,,388769824,,,23.0142246491956,NaN,23.0142246491956,0,0,,,,,(+) Positive,11984.9649120289,Positive
+A01,HEX,,Unkn,,388795257-1,,,35.2077887233114,NaN,35.2077887233114,0,0,,,,,,5728.43145405736,Negative
+A03,HEX,,Neg Ctrl,,,,,34.0337913141802,NaN,34.0337913141802,0,0,,,,,,7672.71508768625,Valid Ctrl
+B01,HEX,,Unkn,,388795257-2,,,34.519560341888,NaN,34.519560341888,0,0,,,,,(+) Positive,8122.12800034994,Negative
+B03,HEX,,Pos Ctrl,,,,,34.071758664928,NaN,34.071758664928,0,0,,,,,,6227.44687192319,Valid Ctrl
+C01,HEX,,Unkn,,388795269-1,,,NaN,NaN,0,0,0,,,,,,310.649041409287,Inhibition
+D01,HEX,,Unkn,,388795269-2,,,NaN,NaN,0,0,0,,,,,,2.86755050573556,Inhibition
+E01,HEX,,Unkn,,388769819,,,32.8298635140245,NaN,32.8298635140245,0,0,,,,,(+) Positive,10782.7785906743,Negative
+F01,HEX,,Unkn,,388769824,,,34.110285460025,NaN,34.110285460025,0,0,,,,,,4848.87774428313,Positive

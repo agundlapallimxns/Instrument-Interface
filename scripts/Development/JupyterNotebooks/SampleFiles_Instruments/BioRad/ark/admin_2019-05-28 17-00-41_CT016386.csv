@@ -1,0 +1,54 @@
+File Name,admin_2019-05-28 17-00-41_CT016386.pcrd,,,,,,
+Created By User,admin,,,,,,
+Notes,,,,,,,
+ID,,,,,,,
+Run Started,05/29/2019 00:00:53 UTC,,,,,,
+Run Ended,05/29/2019 01:55:19 UTC,,,,,,
+Sample Vol,50,,,,,,
+Lid Temp,105,,,,,,
+Protocol File Name,IDE_Protocol.prcl,,,,,,
+Plate Setup File Name,IDE_PlateSetup.pltd,,,,,,
+Base Serial Number,CT016386,,,,,,
+Optical Head Serial Number,790BR01065,,,,,,
+CFX Manager Version,3.1.1554.0821. ,,,,,,
+Test Name,L. mono.,,,,,,
+Assay Name,L. mono.,,,,,,
+Assay Type,Qualitative,,,,,,
+Lot Number,64256230,,,,,,
+Extraction Lot Number,NA,,,,,,
+,,,,,,,
+Amplification step,,,,,,,
+Melt step,,,,,,,
+,,,,,,,
+,,,,,,,
+Well,Fluor,Target,Content,Sample,Cq,Starting Quantity (SQ),Result
+A01,FAM,,Unkn,388577330,NaN,NaN,Negative
+A02,FAM,,Unkn,388577396,NaN,NaN,Negative
+A04,FAM,,Unkn,388577731,28.0405425303189,NaN,Positive
+B01,FAM,,Unkn,388577334,NaN,NaN,Negative
+B02,FAM,,Unkn,388577724,NaN,NaN,Negative
+C01,FAM,,Unkn,388577354,NaN,NaN,Negative
+C02,FAM,,Unkn,388577725,NaN,NaN,Negative
+D01,FAM,,Unkn,388577362,NaN,NaN,Negative
+D02,FAM,,Unkn,38857725 - 2,NaN,NaN,Negative
+E01,FAM,,Unkn,388577371,NaN,NaN,Negative
+F01,FAM,,Unkn,388577376,NaN,NaN,Negative
+G01,FAM,,Unkn,388577384,NaN,NaN,Negative
+G12,FAM,,Neg Ctrl,,NaN,NaN,Valid Ctrl
+H01,FAM,,Unkn,388577391,NaN,NaN,Negative
+H12,FAM,,Pos Ctrl,,30.1636305448881,NaN,Valid Ctrl
+A01,HEX,,Unkn,388577330,37.0419965974789,NaN,Negative
+A02,HEX,,Unkn,388577396,33.6830585366927,NaN,Negative
+A04,HEX,,Unkn,388577731,32.5610707490215,NaN,Positive
+B01,HEX,,Unkn,388577334,36.363561990935,NaN,Negative
+B02,HEX,,Unkn,388577724,35.0221305352875,NaN,Negative
+C01,HEX,,Unkn,388577354,36.1036729420929,NaN,Negative
+C02,HEX,,Unkn,388577725,33.4980542068521,NaN,Negative
+D01,HEX,,Unkn,388577362,35.5323221743358,NaN,Negative
+D02,HEX,,Unkn,38857725 - 2,33.3008480810898,NaN,Negative
+E01,HEX,,Unkn,388577371,35.4619198800093,NaN,Negative
+F01,HEX,,Unkn,388577376,33.2631501023947,NaN,Negative
+G01,HEX,,Unkn,388577384,33.4901220184648,NaN,Negative
+G12,HEX,,Neg Ctrl,,33.8911095874755,NaN,Valid Ctrl
+H01,HEX,,Unkn,388577391,33.6376283869961,NaN,Negative
+H12,HEX,,Pos Ctrl,,33.0656184997487,NaN,Valid Ctrl

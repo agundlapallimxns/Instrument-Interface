@@ -1,5 +1,6 @@
 {
     "inst":"Elementar",
     "analysis":["CODEX","FBR-SR"],
-    "lab":[ "Crete"]
+    "lab":[ "Crete"],
+    "mode":"T"
 }

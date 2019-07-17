@@ -1,0 +1,13 @@
+,Well,Fluor,Target,Content,Sample,End RFU,Call,Sample Type,CallType,Is Control
+,A01,FAM,,Unkn,388047686-1,10038.9353521366,(+) Positive,Unknown,Positive,False
+,A02,FAM,,Unkn,388049438,-459.490681800964,,Unknown,NoCall,False
+,B01,FAM,,Unkn,388047686-2,11057.274254954,(+) Positive,Unknown,Positive,False
+,B02,FAM,,Unkn,388049460,11743.9312350505,(+) Positive,Unknown,Positive,False
+,C01,FAM,,Unkn,388047686-3,11585.3977173937,(+) Positive,Unknown,Positive,False
+,C02,FAM,,Neg Ctrl,,29.5957915912411,,ControlNegative,Negative,True
+,D01,FAM,,Unkn,388047686-4,11734.1370199288,(+) Positive,Unknown,Positive,False
+,D02,FAM,,Pos Ctrl,,15468.9682130308,(+) Positive,ControlPositive,Positive,False
+,E01,FAM,,Unkn,388047686-5,12968.4987684289,(+) Positive,Unknown,Positive,False
+,F01,FAM,,Unkn,388047686-6,11328.1415073331,(+) Positive,Unknown,Positive,False
+,G01,FAM,,Unkn,388047686-7,11744.0939109887,(+) Positive,Unknown,Positive,False
+,H01,FAM,,Unkn,388047920,-183.805833954902,,Unknown,NoCall,False

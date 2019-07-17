@@ -1,0 +1,34 @@
+File Name,admin_2019-05-30 21-29-21_CT016386.pcrd,,,,,,,,,,,,,,,,,,
+Created By User,admin,,,,,,,,,,,,,,,,,,
+Notes,,,,,,,,,,,,,,,,,,,
+ID,,,,,,,,,,,,,,,,,,,
+Run Started,05/31/2019 04:29:26 UTC,,,,,,,,,,,,,,,,,,
+Run Ended,05/31/2019 06:22:35 UTC,,,,,,,,,,,,,,,,,,
+Sample Vol,50,,,,,,,,,,,,,,,,,,
+Lid Temp,105,,,,,,,,,,,,,,,,,,
+Protocol File Name,IDE_Protocol.prcl,,,,,,,,,,,,,,,,,,
+Plate Setup File Name,IDE_PlateSetup.pltd,,,,,,,,,,,,,,,,,,
+Base Serial Number,CT016386,,,,,,,,,,,,,,,,,,
+Optical Head Serial Number,790BR01065,,,,,,,,,,,,,,,,,,
+CFX Manager Version,3.1.1554.0821. ,,,,,,,,,,,,,,,,,,
+Test Name,L. mono.,,,,,,,,,,,,,,,,,,
+Assay Name,L. mono.,,,,,,,,,,,,,,,,,,
+Assay Type,Qualitative,,,,,,,,,,,,,,,,,,
+Lot Number,64256230,,,,,,,,,,,,,,,,,,
+Extraction Lot Number,NA,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+Amplification step,,,,,,,,,,,,,,,,,,,
+Melt step,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+Well,Fluor,Target,Content,Replicate,Sample,Biological Set Name,Well Note,Cq,Starting Quantity (SQ),Cq Mean,Cq Std. Dev,SQ Std. Dev,Melt Temperature,Peak Height,Begin Temperature,End Temperature,Call,End RFU,Result
+A01,FAM,,Unkn,,388648939,,,NaN,NaN,0,0,0,,,,,,-175.641035305883,Negative
+B01,FAM,,Unkn,,388640562,,,NaN,NaN,0,0,0,,,,,,-253.635294776873,Negative
+C01,FAM,,Unkn,,388640596,,,24.2589381923604,NaN,24.2589381923604,0,0,,,,,(+) Positive,11405.9571587538,Positive
+G01,FAM,,Neg Ctrl,,,,,NaN,NaN,0,0,0,,,,,,36.9705759265627,Valid Ctrl
+H01,FAM,,Pos Ctrl,,,,,30.2805843209002,NaN,30.2805843209002,0,0,,,,,(+) Positive,9976.93281992049,Valid Ctrl
+A01,HEX,,Unkn,,388648939,,,33.637544727863,NaN,33.637544727863,0,0,,,,,,6805.99092447845,Negative
+B01,HEX,,Unkn,,388640562,,,33.0341070664722,NaN,33.0341070664722,0,0,,,,,,6772.85477671527,Negative
+C01,HEX,,Unkn,,388640596,,,33.6221500131993,NaN,33.6221500131993,0,0,,,,,,4144.2963759826,Positive
+G01,HEX,,Neg Ctrl,,,,,33.3137662292246,NaN,33.3137662292246,0,0,,,,,,7181.16567383488,Valid Ctrl
+H01,HEX,,Pos Ctrl,,,,,33.1371639882623,NaN,33.1371639882623,0,0,,,,,,5302.1743060644,Valid Ctrl

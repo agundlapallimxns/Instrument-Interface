@@ -1,0 +1,48 @@
+File Name,admin_2019-05-29 21-09-48_CT016386.pcrd,,,,,,
+Created By User,admin,,,,,,
+Notes,,,,,,,
+ID,,,,,,,
+Run Started,05/30/2019 04:09:54 UTC,,,,,,
+Run Ended,05/30/2019 06:03:36 UTC,,,,,,
+Sample Vol,50,,,,,,
+Lid Temp,105,,,,,,
+Protocol File Name,IDE_Protocol.prcl,,,,,,
+Plate Setup File Name,IDE_PlateSetup.pltd,,,,,,
+Base Serial Number,CT016386,,,,,,
+Optical Head Serial Number,790BR01065,,,,,,
+CFX Manager Version,3.1.1554.0821. ,,,,,,
+Test Name,L. mono.,,,,,,
+Assay Name,L. mono.,,,,,,
+Assay Type,Qualitative,,,,,,
+Lot Number,64256230,,,,,,
+Extraction Lot Number,NA,,,,,,
+,,,,,,,
+Amplification step,,,,,,,
+Melt step,,,,,,,
+,,,,,,,
+,,,,,,,
+Well,Fluor,Target,Content,Sample,Cq,Starting Quantity (SQ),Result
+A01,FAM,,Unkn,388609480,NaN,NaN,Negative
+A02,FAM,,Unkn,388581698-2,NaN,NaN,Negative
+B01,FAM,,Unkn,388609498,NaN,NaN,Negative
+B02,FAM,,Unkn,388581703-2,22.7943589030461,NaN,Positive
+C01,FAM,,Unkn,388609532,NaN,NaN,Negative
+D01,FAM,,Unkn,388609550,NaN,NaN,Negative
+E01,FAM,,Unkn,388609665,NaN,NaN,Negative
+F01,FAM,,Unkn,388609669,NaN,NaN,Negative
+G01,FAM,,Unkn,388609681,NaN,NaN,Negative
+G02,FAM,,Neg Ctrl,,NaN,NaN,Valid Ctrl
+H01,FAM,,Unkn,388609694,NaN,NaN,Negative
+H02,FAM,,Pos Ctrl,,29.9482098093062,NaN,Valid Ctrl
+A01,HEX,,Unkn,388609480,36.3782829279765,NaN,Negative
+A02,HEX,,Unkn,388581698-2,33.0887611519795,NaN,Negative
+B01,HEX,,Unkn,388609498,35.1489575861369,NaN,Negative
+B02,HEX,,Unkn,388581703-2,32.4373908520314,NaN,Positive
+C01,HEX,,Unkn,388609532,33.6145003091062,NaN,Negative
+D01,HEX,,Unkn,388609550,33.0776303271218,NaN,Negative
+E01,HEX,,Unkn,388609665,34.3877424185417,NaN,Negative
+F01,HEX,,Unkn,388609669,34.6588933078003,NaN,Negative
+G01,HEX,,Unkn,388609681,33.11885232169,NaN,Negative
+G02,HEX,,Neg Ctrl,,33.5759424834433,NaN,Valid Ctrl
+H01,HEX,,Unkn,388609694,36.6058049973513,NaN,Negative
+H02,HEX,,Pos Ctrl,,33.1784019067764,NaN,Valid Ctrl

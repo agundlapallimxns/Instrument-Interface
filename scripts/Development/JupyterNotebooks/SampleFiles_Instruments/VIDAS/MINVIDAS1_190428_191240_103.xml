@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiMessage>
+ <header>
+  <senderName>bioMerieux</senderName>
+  <version>1394-97</version>
+  <dateTime>20190428191240</dateTime>
+  <instrumentName>MINVIDAS1</instrumentName>
+  <serialNumber></serialNumber>
+ </header>
+ <requestResult>
+  <patientInformation>
+   <patientIdentifier>387</patientIdentifier>
+   <lastName></lastName>
+   <sex>U</sex>
+   <location></location>
+  </patientInformation>
+  <testOrder>
+   <specimen>
+    <specimenIdentifier>faoA618122</specimenIdentifier>
+   </specimen>
+   <test>
+    <actionCode>N</actionCode>
+    <universalIdentifier>
+     <testIdentifier>SLM</testIdentifier>
+     <dilution>1</dilution>
+     <testName>Salmonella</testName>
+    </universalIdentifier>
+    <result>
+     <value>0.04|NEGATIVE</value>
+     <abnormalFlags>valid</abnormalFlags>
+     <resultStatus>F</resultStatus>
+     <operatorName>minn-vidas1</operatorName>
+     <resultDateTime>20190428190832</resultDateTime>
+    </result>
+   </test>
+  </testOrder>
+ </requestResult>
+</aiMessage>
+
