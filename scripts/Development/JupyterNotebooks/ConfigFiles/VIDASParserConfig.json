@@ -1,0 +1,5 @@
+{
+    "ALN":{"count":"5","importerPath":"//mxns.loc//shares//NA-Instruments//VIDAS//VIDAS_LIMS//ALN_IMPORTER//"},
+    "OMH":{"count":"2","importerPath":"//mxns.loc//shares//NA-Instruments//VIDAS//VIDAS_LIMS//OMH_IMPORTER//"},
+    "CRE":{"count":"5","importerPath":"//mxns.loc//shares//NA-Instruments//VIDAS//VIDAS_LIMS//CRE_IMPORTER//"}
+}

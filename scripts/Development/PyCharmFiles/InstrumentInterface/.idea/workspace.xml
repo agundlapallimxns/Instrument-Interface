@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec685065-5a06-4f06-9159-b8a213bdf773" name="Default Changelist" comment="" />
+    <list default="true" id="05c2d851-f80c-4aa9-9bfc-c256700e08f7" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,27 +16,17 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="240" />
-    <option name="y" value="135" />
-    <option name="width" value="1440" />
-    <option name="height" value="810" />
-  </component>
-  <component name="ProjectId" id="1Sg1b34Oq6d9qW3suG2wMYXGatB" />
+  <component name="ProjectId" id="1Sg16S2uNXko43Me7NPZBYnUpU3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/PrasingScript/ConfigFiles" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\GitHub\Instrument-Interface\scripts\Development\PyCharmFiles\PrasingScript" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\GitHub\Instrument-Interface\scripts\Development\PyCharmFiles\PrasingScript\ConfigFiles" />
+      <recent name="C:\GitHub\Instrument-Interface\scripts\Development\PyCharmFiles\InstrumentInterface" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -51,20 +41,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.BioRad">
-    <configuration name="BioRad" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PyCharmFiles" />
+  <component name="RunManager" selected="Python.vidas1">
+    <configuration name="GetListOfComputers" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="InstrumentInterface" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PrasingScript" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PrasingScript/BioRad.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GetListOfComputers.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -73,19 +63,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ChemwellParser" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PyCharmFiles" />
+    <configuration name="VIDAS_Parser_LS" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="InstrumentInterface" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PrasingScript" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PrasingScript/ChemwellParser.py" />
+      <option name="SCRIPT_NAME" value="C:\GitHub\Instrument-Interface\scripts\Development\PyCharmFiles\InstrumentInterface\VidasParser_LS.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -94,19 +84,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Dumatherm (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PyCharmFiles" />
+    <configuration name="VidasParser_LS" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="InstrumentInterface" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PrasingScript" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PrasingScript/Dumatherm.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/VidasParser_LS.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -115,19 +105,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Dumatherm" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PyCharmFiles" />
+    <configuration name="VidasParser_LS_copy" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="InstrumentInterface" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ChemBoostPrasingScript" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ChemBoostPrasingScript/Dumatherm.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/VidasParser_LS_copy.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -136,20 +126,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Elementar (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PyCharmFiles" />
+    <configuration name="vidas1" type="PythonConfigurationType" factoryName="Python">
+      <module name="InstrumentInterface" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PrasingScript" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PrasingScript/Elementar.py" />
-      <option name="PARAMETERS" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/vidas1.py" />
+      <option name="PARAMETERS" value="ALN 5 cccccccc" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -157,13 +147,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.vidas1" />
+      <item itemvalue="Python.GetListOfComputers" />
+      <item itemvalue="Python.VIDAS_Parser_LS" />
+      <item itemvalue="Python.VidasParser_LS" />
+      <item itemvalue="Python.VidasParser_LS_copy" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.BioRad" />
-        <item itemvalue="Python.Dumatherm (1)" />
-        <item itemvalue="Python.Elementar (2)" />
-        <item itemvalue="Python.ChemwellParser" />
-        <item itemvalue="Python.Dumatherm" />
+        <item itemvalue="Python.VidasParser_LS_copy" />
+        <item itemvalue="Python.GetListOfComputers" />
+        <item itemvalue="Python.VidasParser_LS" />
+        <item itemvalue="Python.VIDAS_Parser_LS" />
       </list>
     </recent_temporary>
   </component>
@@ -172,23 +168,25 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ec685065-5a06-4f06-9159-b8a213bdf773" name="Default Changelist" comment="" />
-      <created>1555599604585</created>
+      <changelist id="05c2d851-f80c-4aa9-9bfc-c256700e08f7" name="Default Changelist" comment="" />
+      <created>1567024955457</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1555599604585</updated>
+      <updated>1567024955457</updated>
     </task>
     <servers />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/PrasingScript/Elementar.py</url>
-          <line>102</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

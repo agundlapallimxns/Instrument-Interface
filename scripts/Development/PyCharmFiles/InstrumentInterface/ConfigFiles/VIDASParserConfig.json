@@ -1,0 +1,21 @@
+{
+    "ALNVIDAS":{"labCode":"ALN","count":"5"},
+    "BURVIDAS":{"labCode":"BUR","count":"2"},
+    "CHIVIDAS":{"labCode":"CHI","count":"5"},
+    "COLVIDAS":{"labCode":"COL","count":"4"},
+    "CYPVIDAS":{"labCode":"CYP","count":"3"},
+    "DIMVIDAS":{"labCode":"DIM","count":"2"},
+    "FSCVIDAS":{"labCode":"FSC","count":"1"},
+    "GNVVIDAS":{"labCode":"GNV","count":"3"},
+    "GRAVIDAS":{"labCode":"GRA","count":"4"},
+    "KENVIDAS":{"labCode":"KEN","count":"1"},
+    "MADVIDAS":{"labCode":"MAD","count":"4"},
+    "MARVIDAS":{"labCode":"MAR","count":"3"},
+    "MINVIDAS":{"labCode":"MIN","count":"3"},
+    "MNLVIDAS":{"labCode":"MNL","count":"1"},
+    "MODVIDAS":{"labCode":"MOD","count":"3"},
+    "OMAVIDAS":{"labCode":"OMA","count":"2"},
+    "SLSVIDAS":{"labCode":"SLS","count":"1"},
+    "STOVIDAS":{"labCode":"STO","count":"4"},
+    "TULVIDAS":{"labCode":"TUL","count":"2"}
+}
