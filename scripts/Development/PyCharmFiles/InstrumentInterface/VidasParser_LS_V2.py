@@ -10,6 +10,7 @@ import sys
 
 basePath = '//mxns.loc//shares//NA-Instruments//VIDAS//VIDAS_LIMS//'
 colsOrder = ['Sample.Sample_Number', 'Test.Analysis', 'Test.Replicate_Count','Result.Name', 'Result.Entry', 'Result.Entered_By']
+invalidFlag = 0
 
 # function to generate the result name
 def generateResultname(testIdentifier, variable):
@@ -21,20 +22,20 @@ def generateResultname(testIdentifier, variable):
 
 # function to generate the result name
 def generateResult(value):
-    resultInvalidFlag=0
+    global invalidFlag
+    print(value)
     if value in ('ABSENT','NEGATIVE'):
-        return str('NEGATIVE'),resultInvalidFlag
-    elif value in ('INVALID'):
-        resultInvalidFlag=1
-        return str('INVALID'),resultInvalidFlag
+        return str('NEGATIVE')
+    elif value in ('INVALID','Invalid','N/A'):
+        invalidFlag=1
+        return str('INVALID')
     else:
-        return str('SUSPECT'),resultInvalidFlag
-
+        return str('SUSPECT')
 
 # function to generate the result name
 def generateReplicateCnt(value):
     retVal= ord(value) - 64
-    return  retVal
+    return retVal
 
 # fucntion to Create a folder if it dosen't exsist.
 def createFolderIfNotExsist(folderPath):
@@ -46,7 +47,7 @@ def createFolderIfNotExsist(folderPath):
 
 
 # Moce to ARK folder
-def moveFiletoArkFolder(arkPath, sourcePath, fname):
+def moveFiletoFolder(arkPath, sourcePath, fname):
     # checking the exsitnace of Archive directory and path
     createFolderIfNotExsist(arkPath)
     print("Source for moving" + sourcePath)
@@ -69,11 +70,16 @@ def writeFile(dframe, lab, instName, basePath):
     time.sleep(1)
 
 def GenerateImporterFile(raw_data,instName,basePath):
+    global invalidFlag
     raw_data['specimenIdentifier'] = raw_data[0]
     raw_data['testIdentifier'] = raw_data[1]
     raw_data['R1'] = raw_data[5]
     raw_data['Rtext'] = raw_data[2]
-    raw_data['R2'],resultInvalidFlag = raw_data.apply(lambda x: generateResult(x.Rtext), axis=1)
+    raw_data=raw_data.fillna("N/A")
+    raw_data['R2'] = raw_data.apply(lambda x: generateResult(x.Rtext), axis=1)
+    print("Invalid:"+ str(invalidFlag))
+    if(invalidFlag==1):
+        return
     raw_data['patientIdentifier'] = raw_data[4]
     raw_data = raw_data[np.isfinite(raw_data["patientIdentifier"])]
     raw_data['patientIdentifier'] = raw_data['patientIdentifier'].astype(int)
@@ -94,15 +100,13 @@ def GenerateImporterFile(raw_data,instName,basePath):
     dfResult = dfResult.astype({"Sample.Sample_Number": int})
     dfResult = dfResult.sort_values(by=['Sample.Sample_Number', 'Result.Name'])
     dfResult = dfResult[colsOrder]
-    if(resultInvalidFlag==1):
-        return
-    else:
-        writeFile(dfResult, lab, instName, basePath)
+    writeFile(dfResult, lab, instName, basePath)
 
 
 
 # Function to Process Each Lab seperately
 def processEachLabFiles(lab, labcount, labImporterPath, basePath):
+    global invalidFlag
     print('Process started for ' + lab)
     fileCounter = 0
     #createFolderIfNotExsist(labImporterPath)
@@ -127,15 +131,20 @@ def processEachLabFiles(lab, labcount, labImporterPath, basePath):
                     rawdf['instrumentName'] = instName
                     #li.append(rawdf)
                     print('Processed :' + filename)
-                    moveFiletoArkFolder(arkFolderPath, sourcefilePath, filename)
+                    # Moving to Archive Folder
                     fileStatusFlag = True
                     fileCounter = fileCounter + 1
                     GenerateImporterFile(rawdf, instName, basePath)
+                    if(invalidFlag==1):
+                        moveFiletoFolder(errorFolderPath, sourcefilePath, filename)
+                    else:
+                        moveFiletoFolder(arkFolderPath, sourcefilePath, filename)
                     continue
                 except:
-                    moveFiletoArkFolder(errorFolderPath, sourcefilePath, filename)
+                    #Moving to Error Folder
+                    moveFiletoFolder(errorFolderPath, sourcefilePath, filename)
+                    invalidFlag = 0
                     continue
-
 
 lab = sys.argv[1]
 labcount = int(sys.argv[2])
